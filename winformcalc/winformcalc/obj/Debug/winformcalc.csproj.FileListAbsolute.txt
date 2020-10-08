@@ -1,0 +1,9 @@
+d:\Projects\winformcalc\winformcalc\bin\Debug\winformcalc.exe.config
+d:\Projects\winformcalc\winformcalc\bin\Debug\winformcalc.exe
+d:\Projects\winformcalc\winformcalc\bin\Debug\winformcalc.pdb
+d:\Projects\winformcalc\winformcalc\obj\Debug\winformcalc.csprojResolveAssemblyReference.cache
+d:\Projects\winformcalc\winformcalc\obj\Debug\winformcalc.Form1.resources
+d:\Projects\winformcalc\winformcalc\obj\Debug\winformcalc.Properties.Resources.resources
+d:\Projects\winformcalc\winformcalc\obj\Debug\winformcalc.csproj.GenerateResource.Cache
+d:\Projects\winformcalc\winformcalc\obj\Debug\winformcalc.exe
+d:\Projects\winformcalc\winformcalc\obj\Debug\winformcalc.pdb

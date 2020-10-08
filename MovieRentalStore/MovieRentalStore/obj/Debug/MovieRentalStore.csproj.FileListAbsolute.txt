@@ -1,0 +1,6 @@
+d:\Projects\MovieRentalStore\MovieRentalStore\bin\Debug\MovieRentalStore.exe.config
+D:\Projects\MovieRentalStore\MovieRentalStore\bin\Debug\MovieRentalStore.exe
+D:\Projects\MovieRentalStore\MovieRentalStore\bin\Debug\MovieRentalStore.pdb
+D:\Projects\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.exe
+D:\Projects\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.pdb
+D:\Projects\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.csprojResolveAssemblyReference.cache
