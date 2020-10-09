@@ -4,3 +4,9 @@ D:\Projects\MovieRentalStore\MovieRentalStore\bin\Debug\MovieRentalStore.pdb
 D:\Projects\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.exe
 D:\Projects\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.pdb
 D:\Projects\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.csprojResolveAssemblyReference.cache
+D:\SomeThing\MovieRentalStore\MovieRentalStore\bin\Debug\MovieRentalStore.exe.config
+D:\SomeThing\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.exe
+D:\SomeThing\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.pdb
+D:\SomeThing\MovieRentalStore\MovieRentalStore\bin\Debug\MovieRentalStore.exe
+D:\SomeThing\MovieRentalStore\MovieRentalStore\bin\Debug\MovieRentalStore.pdb
+D:\SomeThing\MovieRentalStore\MovieRentalStore\obj\Debug\MovieRentalStore.csprojResolveAssemblyReference.cache

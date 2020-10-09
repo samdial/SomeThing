@@ -49,23 +49,57 @@ namespace MovieRentalStore
                         Console.WriteLine("Customer`s roster is empty!");
                         break;
                     }
-                    Console.WriteLine("Choose movie to return");
+                    Console.WriteLine("Choose movie to return or push Enter to return all clients movies back");
+
                     CustomersRoster.RentalCustomers[customerIndex].GetRentedMoviesRoster();
-                    int movieIndex = int.Parse(Console.ReadLine());
-                    foreach(VideoMovie m in Inventory.allMovies)
+                    var key = Console.ReadKey(true).Key;
+                    if(key==ConsoleKey.Enter)
                     {
-                        if(m.MovieName==CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow[movieIndex].MovieName)
+                        Console.WriteLine("Mo");
+                        
+                        foreach (VideoMovie mc in CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow)
                         {
-                            m.NowInStock = true;
-                            CustomersRoster.RentalCustomers[customerIndex].debt -=
-                            CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow[movieIndex].rentDays * CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow[movieIndex].TypeOfPrice;
-                            CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow.RemoveAt(movieIndex);
+                            foreach (VideoMovie mInv in Inventory.allMovies)
+                            {
+                                if (mInv.MovieName == mc.MovieName)
+                                {
+                                    mInv.NowInStock = true;
+                                    CustomersRoster.RentalCustomers[customerIndex].debt -=
+                                    mc.rentDays * mc.TypeOfPrice;
+                                    
+                                    
+                                }
+
+                            }
+                            CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow.Clear();
+                            CustomersRoster.RentalCustomers[customerIndex].debt = 0;
                             Inventory.allMovies.Sort();
-                            
+
                             break;
                         }
-
                     }
+                    else
+                    {
+                        var movieIndex = int.Parse(Console.ReadLine());
+                        if(movieIndex!=0)
+                        {
+                            foreach (VideoMovie m in Inventory.allMovies)
+                            {
+                                if (m.MovieName == CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow[movieIndex].MovieName)
+                                {
+                                    m.NowInStock = true;
+                                    CustomersRoster.RentalCustomers[customerIndex].debt -=
+                                    CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow[movieIndex].rentDays * CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow[movieIndex].TypeOfPrice;
+                                    CustomersRoster.RentalCustomers[customerIndex].moviesRentedNow.RemoveAt(movieIndex);
+                                    Inventory.allMovies.Sort();
+
+                                    break;
+                                }
+
+                            }
+                        }
+                    }
+                    
                     
                     break;
                 case ConsoleKey.D3:
